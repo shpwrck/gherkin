@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    certmanager.k8s.io/issuer: gitlab-issuer
+    kubernetes.io/ingress.class: gitlab-nginx
+    kubernetes.io/ingress.provider: nginx
+  name: demo
+  namespace: default
+spec:
+  rules:
+  - host: demo.gitlab.rancheris.in
+    http:
+      paths:
+      - backend:
+          serviceName: demo
+          servicePort: 8080
+        pathType: ImplementationSpecific
+  tls:
+  - hosts:
+    - demo.gitlab.rancheris.in
+    secretName: demo-gitlab-tls

@@ -1,0 +1,12 @@
+apiVersion: certmanager.k8s.io/v1alpha1
+kind: Certificate
+metadata:
+  name: core-harbor-tls
+  namespace: harbor
+spec:
+  dnsNames:
+  - core.harbor.rancheris.in
+  issuerRef:
+    kind: Issuer
+    name: harbor-issuer
+  secretName: core-harbor-tls

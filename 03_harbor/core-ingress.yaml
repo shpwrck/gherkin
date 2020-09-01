@@ -1,0 +1,22 @@
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  annotations:
+    certmanager.k8s.io/issuer: gitlab-issuer
+    kubernetes.io/ingress.class: gitlab-nginx
+    kubernetes.io/ingress.provider: nginx
+  name: core-harbor
+  namespace: default
+spec:
+  rules:
+  - host: core.harbor.gitlab.rancheris.in
+    http:
+      paths:
+      - backend:
+          serviceName: harbor
+          servicePort: 80
+        pathType: ImplementationSpecific
+  tls:
+  - hosts:
+    - core.harbor.gitlab.rancheris.in
+    secretName: core-harbor-gitlab-tls

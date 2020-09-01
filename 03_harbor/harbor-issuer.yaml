@@ -1,0 +1,16 @@
+apiVersion: certmanager.k8s.io/v1alpha1
+kind: Issuer
+metadata:
+  name: harbor-issuer
+  namespace: harbor
+spec:
+  acme:
+    email: jasons@rancher.com
+    privateKeySecretRef:
+      name: harbor-acme-key
+    server: https://acme-v02.api.letsencrypt.org/directory
+    solvers:
+    - http01:
+        ingress:
+          class: nginx
+      selector: {}

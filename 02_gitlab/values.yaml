@@ -1,0 +1,8 @@
+---
+global:
+  hosts:
+    domain: "gitlab.rancheris.in"
+  registry:
+    enabled: false
+certmanager-issuer:
+  email: "jasons@rancher.com"

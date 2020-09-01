@@ -1,0 +1,12 @@
+apiVersion: certmanager.k8s.io/v1alpha1
+kind: Certificate
+metadata:
+  name: notary-harbor-tls
+  namespace: harbor
+spec:
+  dnsNames:
+  - notary.harbor.rancheris.in
+  issuerRef:
+    kind: Issuer
+    name: harbor-issuer
+  secretName: notary-harbor-tls

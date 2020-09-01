@@ -1,0 +1,10 @@
+---
+expose:
+  ingress:
+    hosts:
+      core: "core.harbor.rancheris.in"
+      notary: "notary.harbor.rancheris.in"
+    annotations:
+      kubernetes.io/ingress.provider: nginx
+      kubernetes.io/ingress.class: nginx
+      certmanager.k8s.io/issuer: harbor-issuer
