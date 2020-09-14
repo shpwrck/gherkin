@@ -5,7 +5,7 @@ metadata:
   namespace: harbor
 spec:
   dnsNames:
-  - notary.harbor.rancheris.in
+  - notary.hbr.stateofk8s.com
   issuerRef:
     kind: Issuer
     name: harbor-issuer

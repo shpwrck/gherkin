@@ -10,6 +10,10 @@ This demonstration will replace the built in GitLab registry with harbor.
 
 The GitLab quickstart documentation [here](https://docs.gitlab.com/charts/#gitlab-helm-chart-quick-start-guide) will suffice for this demonstration.
 
+The provisioning of Layer 4 Load Balancers can take some time. :)
+
+Add the DNS A Record to your Domain ( e.g. gitlab.stateofk8s.com )
+
 ## Adding the GitLab Catalog
 
 * Name: "GitLab"

@@ -2,14 +2,14 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   annotations:
-    certmanager.k8s.io/issuer: gitlab-issuer
-    kubernetes.io/ingress.class: gitlab-nginx
+    certmanager.k8s.io/issuer: harbor-issuer
+    kubernetes.io/ingress.class: nginx
     kubernetes.io/ingress.provider: nginx
   name: notary-harbor
   namespace: default
 spec:
   rules:
-  - host: notary.harbor.gitlab.rancheris.in
+  - host: notary.hbr.stateofk8s.com
     http:
       paths:
       - backend:
@@ -18,5 +18,5 @@ spec:
         pathType: ImplementationSpecific
   tls:
   - hosts:
-    - notary.harbor.gitlab.rancheris.in
-    secretName: core-harbor-gitlab-tls
+    - notary.hbr.stateofk8s.com
+    secretName: core-harbor-tls

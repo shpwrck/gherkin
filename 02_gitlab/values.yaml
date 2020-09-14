@@ -1,8 +1,6 @@
 ---
 global:
   hosts:
-    domain: "gitlab.rancheris.in"
-  registry:
-    enabled: false
+    domain: "gl.stateofk8s.com"
 certmanager-issuer:
   email: "jasons@rancher.com"
