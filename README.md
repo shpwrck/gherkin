@@ -57,4 +57,4 @@ deploy-production:
 Replaces Templates
 - [buildpacks](https://buildpacks.io/docs/)
 Replaces BuildConfigs
-
+- [kaniko](https://github.com/GoogleContainerTools/kaniko)
