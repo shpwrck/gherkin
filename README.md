@@ -25,3 +25,36 @@ This repo will deploy Gitlab, Harbor, and a demo application in order to demonst
 * DigitalOcean Account
 * A Single Domain
 * Terraform Knowledge
+
+## Flow
+
+```
+build-stage:
+- build
+- lint
+- code-coverage
+- unit-test
+- tag
+- push
+
+registry-stage:
+- scan
+
+deploy-staging:
+- staging
+
+integration-tests:
+- test
+
+deploy-production:
+- production
+
+```
+
+## OSS References
+
+- [kustomize](https://kubernetes-sigs.github.io/kustomize/guides/bespoke/)
+Replaces Templates
+- [buildpacks](https://buildpacks.io/docs/)
+Replaces BuildConfigs
+
