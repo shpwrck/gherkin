@@ -4,7 +4,8 @@
 ![Harbor](/images/harbor.svg)
 ![Rancher](/images/rancher.svg)
 ![Buildpacks](/images/buildpacks.svg)
-![Kaniko](/images/kaniko.png)
+![Kaniko](/images/kaniko.svg)
+![Kustomize](/images/kustomize.png)
 
 ## G - itlab, H - arbor, E - vents, R - ancher, K - ubernetes, I - mages, N - stuff
 
