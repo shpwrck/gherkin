@@ -1,6 +1,10 @@
 # Gherkin
 
-![Gherkin](/images/gherkin.png)
+![Gitlab](/images/gitlab.svg)
+![Harbor](/images/harbor.svg)
+![Rancher](/images/rancher.svg)
+![Buildpacks](/images/buildpacks.svg)
+![Kaniko](/images/kaniko.png)
 
 ## G - itlab, H - arbor, E - vents, R - ancher, K - ubernetes, I - mages, N - stuff
 

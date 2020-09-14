@@ -8,3 +8,4 @@ expose:
       kubernetes.io/ingress.provider: nginx
       kubernetes.io/ingress.class: nginx
       certmanager.k8s.io/issuer: harbor-issuer
+externalURL: "https://core.hbr.stateofk8s.com"
